@@ -8,10 +8,13 @@ void main()
 int a=0;
 int b;
 pid_t pid;
+do
+{
 printf("Enter the  number\n");
 scanf("%d",&b);
-if(b<0)
+if(b<=0)
 printf("Invalid Input. Please enter a positive number");
+}while(g<=0);
 pid=fork();
 if(pid==0)
 {
