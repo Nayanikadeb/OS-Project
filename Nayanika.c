@@ -13,18 +13,19 @@ do
 printf("Enter the  number\n");
 scanf("%d",&b);
 if(b<=0)
-printf("Invalid Input. Please enter a positive number");
+printf("\nInvalid Input. Please enter a positive number\n");
 }while(g<=0);
 pid=fork();
 if(pid==0)
 {
 printf("\nChild process is working \n");
+printf("%d\n",b);
 while(b!=1)
-{
+        {
         if(b%2==0)
         b=b/2;
         else if(b%2==1)
-        b=3*(b)+1;
+        b=b/2;
 printf("%d \n",b);
 printf("Invalid Input. Please enter a positive number");
 pid=fork();
