@@ -24,7 +24,7 @@ while(b!=1)
         if(b%2==0)
         b=b/2;
         else if(b%2==1)
-        b=3*(b)+1;
+        b=b/2;
 
 printf("%d \n",b);
 
